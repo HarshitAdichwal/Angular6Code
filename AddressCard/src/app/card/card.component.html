@@ -1,0 +1,9 @@
+<div>Name : {{user.name}}</div>
+<div>City : {{user.city}}</div>
+<div>Designation : {{user.designation}}</div>
+<div *ngIf = "user.phone.length">
+    phone : 
+    <div *ngFor = "let item of user.phone">
+        <div>{{item}}</div>
+    </div>
+</div>
